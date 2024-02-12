@@ -33,9 +33,10 @@ Caused by: java.lang.NoSuchMethodException: oracle.ucp.jdbc.proxy.oracle$1ucp$1j
     -p 1521:1521 \
     gvenzl/oracle-xe:slim-faststart
     ```
-2. Run
+2. Wait the container to start
+3. Run
     ```shell
     ./gradlew clean nativeRun
     ```
    
-If **ucp** version is changed **23.3.0.23.09** from to **21.11.0.0** in build.gradle, **./gradlew nativeRun** is successfully executed.
+If **ucp** version is changed **23.3.0.23.09** from to **21.11.0.0** in build.gradle, **./gradlew clean nativeRun** is successfully executed.
